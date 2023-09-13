@@ -13,7 +13,8 @@
         "test:watch": "jest src --watchAll",
         "type-check": "tsc --noEmit",
         "type-check-and-lint": "yarn type-check && yarn lint",
-        "ts-node": "ts-node ./src/skeleton.ts"
+        "fizzbuzzer": "ts-node ./src/FizzBuzzer.ts",
+        "bizzfuzzer": "ts-node ./src/BizzFuzzer.ts"
     },
     "devDependencies": {
         "@types/jest": "^29.5.1",
