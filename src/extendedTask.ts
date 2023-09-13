@@ -1,4 +1,4 @@
-class FizzBuzz {
+export class FizzBuzz {
     currentNum: number;
     tupleArray: [string, number][];
 

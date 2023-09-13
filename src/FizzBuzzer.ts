@@ -11,7 +11,7 @@ console.log(myFizzBuzzer.next())  //1...
 
 */
 
-class FizzBuzzer {
+export class FizzBuzzer {
     currentNum: number;
 
     constructor(currentNum = 0) {

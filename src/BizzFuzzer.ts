@@ -1,4 +1,4 @@
-class BizzFuzzer {
+export class BizzFuzzer {
     currentNum: number;
     bizzWord: string;
     fuzzWord: string;
@@ -10,7 +10,7 @@ class BizzFuzzer {
         fuzzWord: string,
         bizzNum: number,
         fuzzNum: number,
-        currentNum = 1
+        currentNum = 0
     ) {
         this.currentNum = currentNum;
         this.bizzWord = bizzWord;
@@ -35,16 +35,16 @@ class BizzFuzzer {
         }
     }
     reset() {
-        this.currentNum = 1;
+        this.currentNum = 0;
     }
 }
 
 const myBizzFuzzer = new BizzFuzzer("Boop", "Schnoop", 2, 3);
 
 console.log(myBizzFuzzer);
+console.log(myBizzFuzzer.next()); //1
 console.log(myBizzFuzzer.next()); //"Boop"
 console.log(myBizzFuzzer.next()); //"Schnoop"
 console.log(myBizzFuzzer.next()); //"Boop"
-console.log(myBizzFuzzer.next()); //5
 myBizzFuzzer.reset();
-console.log(myBizzFuzzer.next()); //"Boop"
+console.log(myBizzFuzzer.next()); //1
