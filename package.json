@@ -12,7 +12,8 @@
         "test": "jest src",
         "test:watch": "jest src --watchAll",
         "type-check": "tsc --noEmit",
-        "type-check-and-lint": "yarn type-check && yarn lint"
+        "type-check-and-lint": "yarn type-check && yarn lint",
+        "ts-node": "ts-node ./src/skeleton.ts"
     },
     "devDependencies": {
         "@types/jest": "^29.5.1",
