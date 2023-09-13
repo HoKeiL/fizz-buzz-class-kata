@@ -14,7 +14,7 @@ console.log(myFizzBuzzer.next())  //1...
 class FizzBuzzer {
     currentNum: number;
 
-    constructor(currentNum = 1) {
+    constructor(currentNum = 0) {
         this.currentNum = currentNum;
     }
 
@@ -31,16 +31,17 @@ class FizzBuzzer {
         }
     }
     reset() {
-        this.currentNum = 1;
+        this.currentNum = 0;
     }
 }
 
 const myFizzBuzzer = new FizzBuzzer();
 
 console.log(myFizzBuzzer);
+console.log(myFizzBuzzer.next()); //1
 console.log(myFizzBuzzer.next()); //2
 console.log(myFizzBuzzer.next()); //"Fizz"
 console.log(myFizzBuzzer.next()); //4
-console.log(myFizzBuzzer.next()); //"Buzz"
 myFizzBuzzer.reset();
-console.log(myFizzBuzzer.next()); //2
+console.log(myFizzBuzzer);
+console.log(myFizzBuzzer.next()); //1
